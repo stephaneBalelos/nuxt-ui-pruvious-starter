@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@nuxt/ui": "^2.18.7",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "sass": "^1.80.3"
   }
 }
