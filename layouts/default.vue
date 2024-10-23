@@ -1,4 +1,7 @@
 <template>
   <AppNavbar></AppNavbar>
-  <slot />
+  <main>
+    <slot />
+  </main>
+  <AppFooter></AppFooter>
 </template>
