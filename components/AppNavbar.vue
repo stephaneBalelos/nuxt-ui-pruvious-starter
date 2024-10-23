@@ -1,6 +1,6 @@
 <template>
   <header
-    class="backdrop-blur border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 pt-2 pt-2 pb-2 lg:pb-0"
+    class="backdrop-blur border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 pt-4 pt-2 pb-2 lg:pb-0"
   >
     <UContainer class="flex items-center justify-between">
       <div class="flex flex-1 items-center gap-1.5">
@@ -39,7 +39,7 @@
           variant="ghost"
           size="sm"
           icon="i-heroicons-x-mark-20-solid"
-          class="flex sm:hidden ml-auto end-5 top-5 z-10"
+          class="flex lg:hidden ml-auto end-5 top-5 z-10"
           square
           padded
           @click="isOpen = false"
