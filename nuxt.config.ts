@@ -27,6 +27,13 @@ export default defineNuxtConfig({
   
 
   pruvious: {
+    uploads: {
+      drive: {
+        type: 'local',
+        path: './.uploads',
+        urlPrefix: 'uploads',
+      },
+    },
     jwt: {
       secretKey: process.env.NUXT_JWT_SECRET_KEY,
     },
