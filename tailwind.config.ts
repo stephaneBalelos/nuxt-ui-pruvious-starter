@@ -5,7 +5,7 @@ export default <Partial<Config>>{
     theme: {
         extend: {
             colors: {
-                app_red: {
+                appred: {
                     50: '#fef2f2',
                     100: '#ffe1e1',
                     200: '#ffc8c8',
@@ -20,5 +20,8 @@ export default <Partial<Config>>{
                 }
             }
         }
-    }
+    },
+    plugins: [
+        require('@tailwindcss/typography'),
+    ]
 }

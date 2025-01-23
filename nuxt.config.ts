@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['pruvious', '@nuxt/ui', '@nuxtjs/google-fonts'],
+  modules: ['pruvious', '@nuxt/ui', '@nuxtjs/google-fonts', '@nuxtjs/color-mode'],
   googleFonts: {
     families: {
       Lato: {
@@ -11,6 +11,13 @@ export default defineNuxtConfig({
       },
       Poppins: [500],
     },
+  },
+  app: {
+    head: {
+      bodyAttrs: {
+        class: ''
+      }
+    }
   },
 
   css: ['~/assets/scss/main.scss'],
@@ -27,6 +34,13 @@ export default defineNuxtConfig({
   
 
   pruvious: {
+    uploads: {
+      drive: {
+        type: 'local',
+        path: './.uploads',
+        urlPrefix: 'uploads',
+      },
+    },
     jwt: {
       secretKey: process.env.NUXT_JWT_SECRET_KEY,
     },

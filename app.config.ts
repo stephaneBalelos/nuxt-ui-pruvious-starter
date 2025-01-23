@@ -1,6 +1,10 @@
 export default defineAppConfig({
     ui: {
-        primary: 'app_red',
+        primary: 'appred',
         gray: 'stone',
+
+        container: {
+            base: 'w-full'
+        }
     }
 })

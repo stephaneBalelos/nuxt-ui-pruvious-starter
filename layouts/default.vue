@@ -1,4 +1,7 @@
 <template>
-    <UButton>Button</UButton>
-  <slot />
+  <AppNavbar></AppNavbar>
+  <main>
+    <slot />
+  </main>
+  <AppFooter></AppFooter>
 </template>
