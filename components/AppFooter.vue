@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="backdrop-blur border-t border-gray-200 dark:border-gray-800 py-6"
+    class="backdrop-blur border-t border-gray-200 dark:border-gray-800 py-6 not-prose"
   >
     <UContainer class="flex flex-col lg:flex-row gap-6 justify-between">
       <UButton

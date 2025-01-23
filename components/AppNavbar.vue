@@ -1,9 +1,9 @@
 <template>
   <header
-    class="backdrop-blur border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 pt-4 pt-2 pb-2 lg:pb-0"
+    class="not-prose backdrop-blur border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 pt-4"
   >
     <UContainer class="flex items-center justify-between">
-      <div class="flex flex-1 items-center gap-1.5">
+      <div class="flex items-center gap-1.5">
         <NuxtLink
           :to="'/'"
           :aria-label="'label'"
@@ -12,8 +12,10 @@
           Logo
         </NuxtLink>
       </div>
-      <div class="flex-1 hidden lg:flex">
-        <UHorizontalNavigation :links="links" class="justify-center" />
+      <div class="flex-1 hidden lg:flex items-center justify-end">
+        <UHorizontalNavigation :links="links" :ui="{
+          wrapper: 'justify-end',
+        }"/>
       </div>
       <div class="flex items-right gap-1.5 ms-4">
         <UButton size="sm" color="primary" square variant="solid"
