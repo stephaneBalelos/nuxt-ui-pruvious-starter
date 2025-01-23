@@ -1,9 +1,9 @@
 <template>
     <div class="relative">
       <UContainer>
-          <div :class="`flex flex-col justify-start prose prose-headings:mb-2 md:prose-lg lg:prose-xl max-w-none py-8 ${alignment}`">
+          <div :class="`flex flex-col justify-start max-w-none py-8 ${alignment}`">
               <small v-if="subtitle">{{ subtitle }}</small>
-              <h1>{{ title }}</h1>
+              <h1 class="">{{ title }}</h1>
               <p v-if="description">{{ description }}</p>
               <UButton v-if="cta" :to="cta" color="primary" variant="solid" size="sm">{{ ctaLabel }}</UButton>
           </div>

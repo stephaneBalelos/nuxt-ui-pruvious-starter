@@ -3,6 +3,14 @@
     class="backdrop-blur border-t border-gray-200 dark:border-gray-800 py-6"
   >
     <UContainer class="flex flex-col lg:flex-row gap-6 justify-between">
+      <UButton
+        icon="i-heroicons-pencil-square"
+        size="sm"
+        color="primary"
+        square
+        variant="solid"
+        @click="toggleColorMode"
+      />
       <div class="flex flex-col">
         <div class="mb-2">Socials</div>
         <UButton
@@ -85,6 +93,12 @@
   </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const colorMode = useColorMode();
+
+function toggleColorMode() {
+  colorMode.preference = colorMode.preference === "dark" ? "light" : "dark";
+}
+</script>
 
 <style scoped></style>
